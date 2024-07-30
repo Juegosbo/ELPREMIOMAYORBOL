@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombrar los Cartones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nombrar Cartones de Bingo</h1>
+        </header>
+        <section id="naming">
+            <textarea id="namesBlock" placeholder="Pega los nombres aquí, uno por línea..." rows="10" style="width: 100%;"></textarea>
+            <button id="processNames">Procesar Nombres</button>
+            <table id="namingTable">
+                <thead>
+                    <tr>
+                        <th>Número de Cartón</th>
+                        <th>Nombre del Jugador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas se generarán dinámicamente con JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        <button id="backToGame">Regresar al Juego</button>
+    </div>
+    <script src="naming.js"></script>
+</body>
+</html>
