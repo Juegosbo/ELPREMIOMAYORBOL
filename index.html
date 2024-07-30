@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Bingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="bouncing-title"><img src="fondo4.png" alt="Juego de Bingo"></h1>
+            <button id="clearMarks">Limpiar</button>
+            <div class="figure-selection">
+                <label for="selectFigure">Seleccionar Figura:</label>
+                <select id="selectFigure">
+                    <option value="">Seleccione una figura</option>
+                    <option value="diagonals">Letra X</option>
+                    <option value="fourCorners">Cuatro esquinas</option>
+                    <option value="letraZ">Letra Z</option>
+                    <option value="letraT">Letra T</option>
+                    <option value="letraP">Letra P</option>
+                    <option value="bigO">Letra O</option>
+                    <option value="chess">Ajedrez</option>
+                    <option value="comodine">Comodin</option>
+                    <option value="numberOne">Número 1</option>
+                    <option value="Numero2">Número 2</option>
+                    <option value="Numero3">Número 3</option>
+                    <option value="Numero4">Número 4</option>
+                    <option value="letraA">Letra A</option>
+                    <option value="letraE">Letra E</option>
+                    <option value="letraI">Letra I</option>
+                    <option value="letraU">Letra U</option>
+                    <option value="cartonllenos">carton lleno</option>
+                    
+
+                    
+          <!--          <option value="cross">Cruz en la mitad</option>
+                    <option value="diamond">Diamante</option>
+                    
+                    <option value="letterH">Letra H</option>
+                    <option value="tree">Árbol</option>
+                    
+                    <option value="letraL">Letra L</option>
+                    <option value="letraI">Letra I</option>
+                    <option value="letraS">Letra S</option>
+                    <option value="corazon">Corazón</option>
+                    <option value="Ahorcado">Ahorcado</option>
+                    <option value="Explosion">Explosión</option>
+                    <option value="Paraguas">Paraguas</option>
+                    <option value="Araña">Araña</option> -->
+                </select>
+            </div>
+        </header>
+        <section id="controls">
+            <div class="search-container">
+                <input type="text" id="searchBox" placeholder="Buscar cartón por número">
+                <button id="searchButton">Buscar Cartón</button>
+                <button id="nameCards">Nombrar Cartón</button>
+                <button id="winnerButton">GANADOR</button>
+            </div>
+            <div id="figureOptionsContainer">
+                <h2>FIGURAS</h2>
+                <form id="figureOptionsForm">
+                    <label><input type="checkbox" value="4ESQUINAS"> Cuatro Esquinas</label><br>
+                    <label><input type="checkbox" value="COMODIN"> Comodín</label><br>
+                    <label><input type="checkbox" value="letraZ"> Letra Z</label><br>
+                    <label><input type="checkbox" value="letraX"> Letra X</label><br>
+                    <label><input type="checkbox" value="letraT"> Letra T</label><br>
+                    <label><input type="checkbox" value="letraP"> Letra P</label><br>
+                    <label><input type="checkbox" value="letraO"> Letra O</label><br>
+                 <!--   <label><input type="checkbox" value="L"> Letra L</label><br> -->
+                    <label><input type="checkbox" value="AJEDREZ"> Ajedrez</label><br>
+                    <label><input type="checkbox" value="Numerouno"> Numero 1 </label><br>
+                    <label><input type="checkbox" value="Numerodos"> Numero 2</label><br>
+                    <label><input type="checkbox" value="Numerotres"> Numero 3</label><br>
+                    <label><input type="checkbox" value="Numerocuatro"> Numero 4</label><br>
+                    <label><input type="checkbox" value="letraA"> letra A</label><br>
+                    <label><input type="checkbox" value="letraE">letra E</label><br>
+                    <label><input type="checkbox" value="letrai"> letra I</label><br>
+                    <label><input type="checkbox" value="letraU">letra U</label><br>
+                    <label><input type="checkbox" value="cartonlleno">carton lleno</label><br>
+                   
+
+                    
+                <!---    <label><input type="checkbox" value="letraI"> Letra I</label><br>
+                    <label><input type="checkbox" value="letraS"> Letra S</label><br>
+                    <label><input type="checkbox" value="2linea"> 2 Líneas</label><br>
+                    <label><input type="checkbox" value="LINEA"> Línea</label><br>        
+                     <label><input type="checkbox" value="U"> Letra U</label><br>
+                    <label><input type="checkbox" value="J"> Letra J</label><br>  -->
+                    
+                </form>
+            </div>
+        </section>
+        <section id="bingo">
+            <div id="bingoBoardsContainer"></div>
+            <div id="paginationControls">
+                <button id="prevPage">Anterior</button>
+                <span id="currentPage">1</span> / <span id="totalPages"></span>
+                <button id="nextPage">Siguiente</button>
+            </div>
+            <div id="figurePreviewContainer" class="figure-preview">
+                <div id="figurePreview" class="bingoBoard small"></div>
+                <div id="figureImageContainer">
+                    <img id="figureImage" src="" alt="Figura">
+                </div>
+            </div>
+            <div id="masterBoardContainer"></div>
+            <img id="smallImage" src="dolar.png" alt="Descripción de la imagen">
+        </section>
+        <div id="winnerVideoContainer">
+            <video id="winnerVideo" controls>
+                <source src="ganador.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <button id="closeVideo">X</button>
+        </div>
+        <button id="printButton">Imprimir</button>
+    </div>
+    <section id="winnersSection">
+        <ul id="winnersList"></ul>
+        <h2>Lista de Ganadores</h2>
+    </section>
+    <script src="scripts.js"></script>
+    <script src="winners.js"></script>
+</body>
+</html>
