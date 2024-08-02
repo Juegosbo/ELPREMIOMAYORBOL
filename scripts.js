@@ -417,20 +417,20 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (figure) {
             case 'letraB':
             cells = [
-                true,  true, false, true, true,
+                true,  true, true, true, true,
                 true, false,  true, false,  true,
                 true, false, false,  false, true,
                 true, false,  true, false,  true,
-                true,  true, true, true, true
+                true,  true, false, true, true
             ];
             figureImageSrc = 'LetraT.png'; // Cambia a la ruta de tu imagen
             break;
             case 'letraN':
             cells = [
                 true,  true, true, true, true,
-                false, true,  true, true,  false,
+                false, true,  false, false,  false,
                 false, false, false,  true, false,
-                false, false,  true, true,  false,
+                false, false,  false, true,  false,
                 true,  true, true, true, true
             ];
             figureImageSrc = 'LetraT.png'; // Cambia a la ruta de tu imagen
@@ -820,29 +820,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
             case 'letraB':
             cells = [
-                true,  true, false, true, true,
+                true,  true, true, true, true,
                 true, false,  true, false,  true,
                 true, false, false,  false, true,
                 true, false,  true, false,  true,
-                true,  true, true, true, true
+                true,  true, false, true, true
             ];
             break;
             case 'letraN':
             cells = [
                 true,  true, true, true, true,
-                false, true,  true, false,  false,
+                false, true,  false, false,  false,
                 false, false, false,  false, false,
-                false, false,  true, true,  false,
+                false, false,  false, true,  false,
                 true,  true, true, true, true
             ];
             break;
             case 'letraG':
             cells = [
-                true, false, false,  false, false,
-                true, false, false,  false, false,
-                true,  true,  true,  true,  true,
-                true, false, false,  false, false,
-                true, false, false,  false, false
+                true, true, true,  true, true,
+                true, false, false,  false, true,
+                true,  false,  true,  false,  true,
+                true, false, true,  false, true,
+                true, false, true,  true, true
             ];
             break;
             case 'letraT':
