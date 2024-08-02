@@ -415,6 +415,36 @@ document.addEventListener('DOMContentLoaded', () => {
         let figureImageSrc = '';
 
         switch (figure) {
+            case 'letraB':
+            cells = [
+                true,  true, false, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  true, false,  true,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'LetraT.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'letraN':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  true, true,  false,
+                false, false, false,  true, false,
+                false, false,  true, true,  false,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'LetraT.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'letraG':
+            cells = [
+                true,  false, true, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  false, false,  true,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'LetraT.png'; // Cambia a la ruta de tu imagen
+            break;
             case 'letraT':
             cells = [
                 false, false, true,  false, false,
@@ -720,36 +750,6 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
-            case 'letraB':
-            cells = [
-                true,  true, false, true, true,
-                true, false,  true, false,  true,
-                true, false, false,  false, true,
-                true, false,  true, false,  true,
-                true,  true, true, true, true
-            ];
-            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
-            break;
-            case 'letraN':
-            cells = [
-                true,  true, true, true, true,
-                false, true,  true, true,  false,
-                false, false, false,  true, false,
-                false, false,  true, true,  false,
-                true,  true, true, true, true
-            ];
-            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
-            break;
-            case 'letraG':
-            cells = [
-                true,  false, true, true, true,
-                true, false,  true, false,  true,
-                true, false, false,  false, true,
-                true, false,  false, false,  true,
-                true,  true, true, true, true
-            ];
-            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
-            break;
             case 'cruzevastica':
             cells = [
                 true,  true, true, false, true,
@@ -817,6 +817,34 @@ document.addEventListener('DOMContentLoaded', () => {
         let cells = Array(25).fill(false);
 
         switch (selectedFigure) {
+
+            case 'letraB':
+            cells = [
+                true,  true, false, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  true, false,  true,
+                true,  true, true, true, true
+            ];
+            break;
+            case 'letraN':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  true, false,  false,
+                false, false, false,  false, false,
+                false, false,  true, true,  false,
+                true,  true, true, true, true
+            ];
+            break;
+            case 'letraG':
+            cells = [
+                true, false, false,  false, false,
+                true, false, false,  false, false,
+                true,  true,  true,  true,  true,
+                true, false, false,  false, false,
+                true, false, false,  false, false
+            ];
+            break;
             case 'letraT':
             cells = [
                 true, false, false,  false, false,
@@ -1090,30 +1118,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 false, true, false,  true, false,
                 true, true,  true, true,  true,
                 false,  true, false, true, false
-            ];
-            case 'letraB':
-            cells = [
-                true,  true, false, true, true,
-                true, false,  true, false,  true,
-                true, false, false,  false, true,
-                true, false,  true, false,  true,
-                true,  true, true, true, true
-            ];
-            case 'letraN':
-            cells = [
-                true,  true, true, true, true,
-                false, true,  true, false,  false,
-                false, false, false,  false, false,
-                false, false,  true, true,  false,
-                true,  true, true, true, true
-            ];
-            case 'letraG':
-            cells = [
-                true,  false, true, true, true,
-                true, false,  true, false,  true,
-                true, false, false,  false, true,
-                true, false,  false, false,  true,
-                true,  true, true, true, true
             ];
             break;
             case 'cruzevastica':
