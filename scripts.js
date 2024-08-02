@@ -635,7 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 false,  false, false, false, false,
                 true, false,  false, false,  true,
                 true, false, false,  false, true,
-                true, true,  false, true,  true,
+                true, true,  true, true,  true,
                 false,  false, false, false, false
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
@@ -646,6 +646,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 true, true,  true, false,  false,
                 false, false, false,  false, false,
                 true, true,  true, true,  true,
+                false,  false, false, false, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+                 case 'Numero5':
+            cells = [
+                false,  false, false, false, false,
+                true, false,  true, true,  true,
+                true, false, false,  false, true,
+                true, true,  true, false,  true,
                 false,  false, false, false, false
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
@@ -697,6 +707,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 false, true, false,  true, false,
                 false, true,  true, true,  false,
                 false,  false, false, false, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'numeral':
+            cells = [
+                false,  true, false, true, false,
+                true, true,  true, true,  true,
+                false, true, false,  true, false,
+                true, true,  true, true,  true,
+                false,  true, false, true, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'cruzevastica':
+            cells = [
+                true,  false, true, true, true,
+                true, false,  true, false,  false,
+                true, true, false,  true, true,
+                false, false,  true, false,  true,
+                true,  true, true, false, true
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
@@ -956,7 +986,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 false,  false, false, false, false,
                 true, false,  false, false,  true,
                 true, false, false,  false, true,
-                true, true,  false, true,  true,
+                true, true,  true, true,  true,
                 false,  false, false, false, false
             ];
             break;
@@ -966,6 +996,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 true, true,  true, false,  false,
                 false, false, false,  false, false,
                 true, true,  true, true,  true,
+                false,  false, false, false, false
+            ];
+            break;
+            case 'Numero5':
+            cells = [
+                false,  false, false, false, false,
+                true, false,  true, true,  true,
+                true, false, false,  false, true,
+                true, true,  true, false,  true,
                 false,  false, false, false, false
             ];
             break;
@@ -1012,6 +1051,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 false, true, false,  true, false,
                 false, true,  true, true,  false,
                 false,  false, false, false, false
+            ];
+            break;
+            case 'numeral':
+            cells = [
+                false,  true, false, true, false,
+                true, true,  true, true,  true,
+                false, true, false,  true, false,
+                true, true,  true, true,  true,
+                false,  true, false, true, false
+            ];
+            break;
+            case 'cruzevastica':
+            cells = [
+                true,  false, true, true, true,
+                true, false,  true, false,  false,
+                true, true, false,  true, true,
+                false, false,  true, false,  true,
+                true,  true, true, false, true
             ];
             break;
             default:
