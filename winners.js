@@ -185,6 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
             true, false, false, false, true,
             true, false, false, false, true,
             true, true, true, true, true
+        ],
+        'cruzevastica': [
+            true, true, true, false, true,
+            false, false, false, false, true,
+            true, false, false, false, true,
+            true, false, false, false, false,
+            true, false, true, true, true
         ]
 
         // Añadir otras figuras aquí
