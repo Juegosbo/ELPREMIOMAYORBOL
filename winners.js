@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const winnersList = document.getElementById('winnersList');
     const figureOptionsForm = document.getElementById('figureOptionsForm');
-    const totalBoards = 1600;
+    const totalBoards = 2600;
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
     // Verificar si los elementos son seleccionados correctamente
@@ -101,6 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
             false, true, true, true, false,
             false, false, false, false, false
         ],
+        'numeral': [
+            false, true, false, true, false,
+            true, true, true, true, true,
+            false, true, false, true, false,
+            true, true, true, true, true,
+            false, true, false, true, false
+        ],
         'letraU': [
             true, true, true, true, true,
             false, false, false, false, true,
@@ -148,6 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
             true, true,  true, false,  false,
             false, false, false,  false, false,
             true, true,  true, true,  true,
+            false,  false, false, false, false
+        ],
+        'Numero5': [
+           false,  false, false, false, false,
+            true, false,  true, false,  true,
+            true, false, false,  false, true,
+            true, true,  true, false,  true,
             false,  false, false, false, false
         ],
         'letraA': [
