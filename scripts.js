@@ -722,11 +722,11 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
             case 'cruzevastica':
             cells = [
-                true,  false, true, true, true,
-                true, false,  true, false,  false,
-                true, true, false,  true, true,
+                true,  true, true, false, true,
                 false, false,  true, false,  true,
-                true,  true, true, false, true
+                true, true, false,  true, true,
+                true, false,  true, false,  false,
+                true,  false, true, true, true
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
@@ -1064,11 +1064,11 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
             case 'cruzevastica':
             cells = [
-                true,  false, true, true, true,
-                true, false,  true, false,  false,
-                true, true, false,  true, true,
+                true,  true, true, false, true,
                 false, false,  true, false,  true,
-                true,  true, true, false, true
+                true, true, false,  true, true,
+                true, false,  true, false,  false,
+                true,  false, true, true, true
             ];
             break;
             default:
