@@ -720,6 +720,36 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
+            case 'letraB':
+            cells = [
+                false,  true, false, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  true, false,  true,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'letraN':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  false, false,  false,
+                false, false, false,  false, false,
+                false, false,  false, true,  false,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+            case 'letraG':
+            cells = [
+                true,  false, true, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  false, false,  true,
+                true,  true, true, true, true
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
             case 'cruzevastica':
             cells = [
                 true,  true, true, false, true,
@@ -1060,6 +1090,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 false, true, false,  true, false,
                 true, true,  true, true,  true,
                 false,  true, false, true, false
+            ];
+            case 'letraB':
+            cells = [
+                true,  true, true, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  true, false,  true,
+                true,  true, true, true, true
+            ];
+            case 'letraN':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  false, false,  false,
+                false, false, false,  false, false,
+                false, false,  false, true,  false,
+                true,  true, true, true, true
+            ];
+            case 'letraG':
+            cells = [
+                true,  false, true, true, true,
+                true, false,  true, false,  true,
+                true, false, false,  false, false,
+                true, false,  false, false,  true,
+                true,  true, true, true, true
             ];
             break;
             case 'cruzevastica':
