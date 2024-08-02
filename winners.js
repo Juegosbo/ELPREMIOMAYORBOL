@@ -17,6 +17,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Definimos las figuras posibles
     const figures = {
+        'letraB': [
+            true,  true, true, true, true,
+            true, false,  true, false,  true,
+            true, false, false,  false, true,
+            true, false,  true, false,  true,
+            true,  true, false, true, true
+        ],
+        'letraN': [
+            true,  true, true, true, true,
+            false, true,  false, false,  false,
+            false, false, false,  false, false,
+            false, false,  false, true,  false,
+            true,  true, true, true, true
+        ],
+        'letraG': [
+            true,  true, true, true, true,
+            true, false,  false, false,  true,
+            true, false, false,  false, true,
+            true, false,  true, false,  true,
+            true,  false, true, true, true
+        ],
         'letraT': [
             true,  false, false, false, false,
             true, false,  false, false,  false,
