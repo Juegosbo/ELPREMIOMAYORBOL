@@ -690,6 +690,18 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
+
+            case 'Numero6':
+            cells = [
+                false,  false, false, false, false,
+                true, true,  true, true,  true,
+                true, false, false,  false, true,
+                true, false,  true, true,  true,
+                false,  false, false, false, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+                
          case 'letraA':
             cells = [
                 true,  true, true, true, true,
@@ -1061,6 +1073,15 @@ document.addEventListener('DOMContentLoaded', () => {
             cells = [
                 false,  false, false, false, false,
                 true, true,  true, false,  true,
+                true, false, false,  false, true,
+                true, false,  true, true,  true,
+                false,  false, false, false, false
+            ];
+            break;
+            case 'Numero6':
+            cells = [
+                false,  false, false, false, false,
+                true, true,  true, true,  true,
                 true, false, false,  false, true,
                 true, false,  true, true,  true,
                 false,  false, false, false, false
