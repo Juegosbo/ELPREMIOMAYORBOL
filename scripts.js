@@ -775,11 +775,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
              case 'barco':
             cells = [
-                false,  true, false, false, false,
-                true, true,  false, false,  false,
+                false,  false, false, true, false,
+                false, false,  false, true,  true,
                 true, true, false,  true, true,
-                true, true,  false, true,  false,
-                false,  true, false, false, false
+                false, true,  false, true,  true,
+                false,  false, false, true, false
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
@@ -1183,11 +1183,11 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
             case 'barco':
             cells = [
-                false,  true, false, false, false,
-                true, true,  false, false,  false,
+                false,  false, false, true, false,
+                false, false,  false, true,  true,
                 true, true, false,  true, true,
-                true, true,  false, true,  false,
-                false,  true, false, false, false
+                false, true,  false, true,  true,
+                false,  false, false, true, false
             ];
             break;
             case 'avion':
@@ -1201,11 +1201,11 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
             case 'mediatabla':
             cells = [
-                true,  true, true, true, true,
-                false, true,  true, false,  true,
-                false, false, false,  true, true,
-                false, false,  false, true,  true,
-                false,  false, false, false, true
+                true,  false, false, false, false,
+                true, true,  false, false,  false,
+                true, true, false,  false, false,
+                true, true,  true, true,  false,
+                true,  true, true, true, true
             ];
             break;
             default:
