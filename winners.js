@@ -216,6 +216,39 @@ document.addEventListener('DOMContentLoaded', () => {
             true, false, false, false, true,
             true, true, true, true, true
         ],
+
+        'diamante': [
+            false,  false, true, false, false,
+            false, true,  false, true,  false,
+            false, false, false,  false, true,
+            false, true,  false, true,  false,
+            true,  false, true, false, false
+        ],
+
+        'barco': [
+            false,  false, false, true, false,
+            false, false,  false, true,  true,
+            true, true, false,  true, true,
+            false, true,  false, true,  true,
+            false,  false, false, true, false
+        ],
+
+        'avion': [
+            false,  true, true, true, false,
+            false, false,  true, false,  false,
+            false, false, false,  false, false,
+            true, true,  true, true,  true,
+            false,  false, true, false, false
+        ],
+
+        'mediatabla': [
+            true,  true, true, true, true,
+            true, true,  true, true,  false,
+            true, true, false,  false, false,
+            true, true,  false, false,  false,
+            true,  false, false, false, false
+        ],
+        
         'cruzevastica': [
             true, true, true, false, true,
             false, false, false, false, true,
@@ -223,6 +256,13 @@ document.addEventListener('DOMContentLoaded', () => {
             true, false, false, false, false,
             true, false, true, true, true
         ]
+
+        
+
+
+
+        //NUEVAS FIGURAS
+        
 
         // Añadir otras figuras aquí
         
