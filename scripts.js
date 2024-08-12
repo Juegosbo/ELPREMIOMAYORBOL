@@ -772,6 +772,37 @@ document.addEventListener('DOMContentLoaded', () => {
             ];
             figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
             break;
+
+             case 'barco':
+            cells = [
+                false,  true, false, false, false,
+                true, true,  false, false,  false,
+                true, true, false,  true, true,
+                true, true,  false, true,  false,
+                false,  true, false, false, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+             case 'avion':
+            cells = [
+                false,  true, false, false, false,
+                true, true,  false, false,  false,
+                true, true, false,  true, true,
+                true, true,  false, true,  false,
+                false,  true, false, false, false
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
+             case 'mediatabla':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  true, true,  true,
+                false, false, false,  true, true,
+                false, false,  false, true,  true,
+                false,  false, false, false, true
+            ];
+            figureImageSrc = 'diagonals.png'; // Cambia a la ruta de tu imagen
+            break;
             default:
                 return;
         }
@@ -1148,6 +1179,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 true, true, false,  true, true,
                 true, false,  true, false,  false,
                 true,  false, true, true, true
+            ];
+            break;
+            case 'barco':
+            cells = [
+                false,  true, false, false, false,
+                true, true,  false, false,  false,
+                true, true, false,  true, true,
+                true, true,  false, true,  false,
+                false,  true, false, false, false
+            ];
+            break;
+            case 'avion':
+            cells = [
+                false,  true, true, true, false,
+                false, false,  true, false,  false,
+                false, false, false,  false, false,
+                true, true,  true, true,  true,
+                false,  false, true, false, false
+            ];
+            break;
+            case 'mediatabla':
+            cells = [
+                true,  true, true, true, true,
+                false, true,  true, false,  true,
+                false, false, false,  true, true,
+                false, false,  false, true,  true,
+                false,  false, false, false, true
             ];
             break;
             default:
