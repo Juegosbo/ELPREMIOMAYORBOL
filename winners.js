@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             false, true,  false, true,  false,
             true, false, false,  false, true,
             false, true,  false, true,  false,
-            true,  false, true, false, false
+            false,  false, true, false, false
         ],
 
         'barco': [
