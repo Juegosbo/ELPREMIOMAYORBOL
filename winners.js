@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const winnersList = document.getElementById('winnersList');
     const figureOptionsForm = document.getElementById('figureOptionsForm');
-    const totalBoards = 2000;
+    const totalBoards = 2400;
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
     // Verificar si los elementos son seleccionados correctamente
