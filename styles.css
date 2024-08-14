@@ -13,11 +13,6 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
-/* Asegura que el label esté arriba del input */
-#labelHoyJuega {
-    display: block;          /* El label estará en su propia línea */
-    margin-bottom: 5px;      /* Espacio entre el label y el input */
-}
 
 /* Estilo para el input y el botón, para que estén en la misma línea */
 #hoyjuega,
@@ -38,6 +33,12 @@ body {
     cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
 }
 
+/* Asegura que el label esté debajo del input */
+#labelHoyJuega {
+    display: block;          /* El label estará en su propia línea */
+    margin-top: 5px;         /* Espacio entre el input y el label */
+    font-weight: bold;       /* (Opcional) Hace que el texto sea más destacado */
+}
 
 
 
