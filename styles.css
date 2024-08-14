@@ -14,33 +14,50 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-/* Estilo para el label */
-#labelHoyJuega {
-    position: relative;
-    top: 65px;              /* Mueve el label hacia arriba */
-    left: -650px;            /* Mueve el label hacia la izquierda */
-    white-space: nowrap;     /* Asegura que el texto esté en una sola línea */
-    font-weight: bold;       /* Hace que el texto sea más destacado */
-    font-size: 14px;         /* Ajusta el tamaño de la fuente */
-}
-
 /* Estilo para el input */
 #hoyjuega {
-    padding: 5px;            /* Espacio interno del input */
-    font-size: 14px;         /* Tamaño de la fuente */
-    width: 100px;            /* Ajusta el ancho del input para hacerlo más pequeño */
-    margin-right: 0px;       /* Elimina el margen derecho para que el botón esté pegado al input */
+    padding: 10px 15px;          /* Espacio interno amplio */
+    font-size: 16px;             /* Tamaño de la fuente más grande */
+    border-radius: 5px;          /* Bordes redondeados */
+    border: 2px solid #3498db;   /* Borde de color azul */
+    outline: none;               /* Elimina el borde por defecto al hacer clic */
+    width: 250px;                /* Ancho del input */
+    margin-right: 10px;          /* Espacio entre el input y el botón */
+    transition: all 0.3s ease;   /* Transición suave en el foco */
+}
+
+#hoyjuega::placeholder {
+    color: #aaa;                 /* Color del texto del placeholder */
+    font-style: italic;          /* Texto en cursiva */
+}
+
+/* Cambia el color de borde y sombra al enfocar */
+#hoyjuega:focus {
+    border-color: #2980b9;       /* Color de borde más oscuro al enfocar */
+    box-shadow: 0 0 10px #2980b9;/* Sombra al enfocar */
 }
 
 /* Estilo para el botón */
 #setMaxNumber {
-    padding: 5px 10px;       /* Espacio interno del botón */
-    font-size: 14px;         /* Tamaño de la fuente */
-    margin-left: 5px;        /* Espacio mínimo entre el botón y el input */
-    cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px 20px;          /* Espacio interno del botón */
+    font-size: 16px;             /* Tamaño de la fuente */
+    border-radius: 5px;          /* Bordes redondeados */
+    border: none;                /* Sin borde */
+    background-color: #3498db;   /* Color de fondo azul */
+    color: white;                /* Color del texto en blanco */
+    cursor: pointer;             /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave al pasar sobre el botón */
 }
 
+/* Cambia el color de fondo al pasar el mouse */
+#setMaxNumber:hover {
+    background-color: #2980b9;   /* Color de fondo más oscuro al pasar el mouse */
+}
 
+/* Efecto de presión al hacer clic */
+#setMaxNumber:active {
+    background-color: #1c598a;   /* Color de fondo aún más oscuro al hacer clic */
+}
 
 
 #figureOptionsContainer {
