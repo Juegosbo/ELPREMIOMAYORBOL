@@ -4,21 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalBoards = 2300;
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
-    // Nuevo elemento de entrada para el número máximo de cartones
-    const hoyjuegaInput = document.getElementById('hoyjuega');
-    const setMaxNumberButton = document.getElementById('setMaxNumber');
-
-    // Funcionalidad para ajustar el número máximo de cartones
-    setMaxNumberButton.addEventListener('click', () => {
-        const newMaxNumber = parseInt(hoyjuegaInput.value);
-        if (!isNaN(newMaxNumber) && newMaxNumber > 0) {
-            totalBoards = newMaxNumber;
-            alert(`Ahora se juega hasta el cartón número ${totalBoards}`);
-        } else {
-            alert('Por favor, ingrese un número válido.');
-        }
-    });
-
     
     // Verificar si los elementos son seleccionados correctamente
     if (!winnersList) {
