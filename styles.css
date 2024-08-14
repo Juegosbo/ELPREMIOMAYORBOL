@@ -21,7 +21,7 @@ body {
     border-radius: 5px;          /* Bordes redondeados */
     border: 2px solid #3498db;   /* Borde de color azul */
     outline: none;               /* Elimina el borde por defecto al hacer clic */
-    width: 250px;                /* Ancho del input */
+    width: 340px;                /* Ancho del input */
     margin-right: 10px;          /* Espacio entre el input y el botón */
     transition: all 0.3s ease;   /* Transición suave en el foco */
 }
