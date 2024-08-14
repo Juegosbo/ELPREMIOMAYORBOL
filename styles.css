@@ -43,7 +43,7 @@ body {
     font-size: 16px;             /* Tamaño de la fuente */
     border-radius: 5px;          /* Bordes redondeados */
     border: none;                /* Sin borde */
-    background-color: #3498db;   /* Color de fondo azul */
+    background-color: #cf000d;   /* Color de fondo azul */
     color: white;                /* Color del texto en blanco */
     cursor: pointer;             /* Cambia el cursor al pasar sobre el botón */
     transition: background-color 0.3s ease; /* Transición suave al pasar sobre el botón */
