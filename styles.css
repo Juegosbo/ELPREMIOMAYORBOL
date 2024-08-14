@@ -13,18 +13,17 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
-
 /* Asegura que el label esté arriba del input */
 #labelHoyJuega {
     display: block;          /* El label estará en su propia línea */
     margin-bottom: 5px;      /* Espacio entre el label y el input */
-    font-weight: bold;       /* (Opcional) Hace que el texto sea más destacado */
 }
 
-/* Contenedor que agrupa el input y el botón en la misma línea */
-#inputContainer {
-    display: flex;           /* Hace que el input y el botón estén en la misma línea */
-    align-items: center;     /* Alinea verticalmente el botón con el input */
+/* Estilo para el input y el botón, para que estén en la misma línea */
+#hoyjuega,
+#setMaxNumber {
+    display: inline-block;   /* Hace que el input y el botón estén en línea */
+    vertical-align: middle;  /* Alinea verticalmente el botón con el input */
 }
 
 #hoyjuega {
@@ -38,6 +37,8 @@ body {
     font-size: 14px;         /* Tamaño de la fuente */
     cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
 }
+
+
 
 
 #figureOptionsContainer {
