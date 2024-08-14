@@ -14,6 +14,30 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
+/*css para el que indica hasta que carton se juega*/
+/* Estilos especiales para el contenedor de "hasta qué número se juega hoy" */
+.max-number-container {
+    display: flex;
+    flex-direction: column; /* Coloca el label encima del input */
+    margin-bottom: 10px; /* Espacio inferior para separarlo de otros elementos */
+}
+
+.max-number-container label {
+    font-weight: bold; /* Opcional: para destacar el texto */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+}
+
+.max-number-container input {
+    padding: 5px; /* Añadir algo de padding al input */
+    font-size: 14px; /* Ajustar el tamaño de fuente */
+}
+
+.max-number-container button {
+    margin-top: 5px; /* Espacio entre el input y el botón */
+    padding: 5px 10px; /* Ajustar el padding del botón */
+}
+
+
 #figureOptionsContainer {
     background-image: url('fondo3.png'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
