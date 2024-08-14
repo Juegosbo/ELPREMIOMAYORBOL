@@ -13,28 +13,23 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
-
-/*css para el que indica hasta que carton se juega*/
-/* Estilos especiales para el contenedor de "hasta qué número se juega hoy" */
-.max-number-container {
-    display: flex;
-    flex-direction: column; /* Coloca el label encima del input */
-    margin-bottom: 10px; /* Espacio inferior para separarlo de otros elementos */
+/* Estilo específico para el label y el input */
+#labelHoyJuega {
+    display: block;           /* Asegura que el label esté en su propia línea */
+    margin-bottom: 5px;       /* Espacio entre el label y el input */
+    font-weight: bold;        /* Opcional: para hacer el texto más destacado */
 }
 
-.max-number-container label {
-    font-weight: bold; /* Opcional: para destacar el texto */
-    margin-bottom: 5px; /* Espacio entre el label y el input */
+#hoyjuega {
+    padding: 5px;             /* Espacio interno del input */
+    font-size: 14px;          /* Tamaño de fuente */
+    margin-bottom: 10px;      /* Espacio debajo del input para separar del botón */
 }
 
-.max-number-container input {
-    padding: 5px; /* Añadir algo de padding al input */
-    font-size: 14px; /* Ajustar el tamaño de fuente */
-}
-
-.max-number-container button {
-    margin-top: 5px; /* Espacio entre el input y el botón */
-    padding: 5px 10px; /* Ajustar el padding del botón */
+#setMaxNumber {
+    padding: 5px 10px;        /* Espacio interno del botón */
+    font-size: 14px;          /* Tamaño de fuente del botón */
+    cursor: pointer;          /* Cambiar el cursor al pasar sobre el botón */
 }
 
 
