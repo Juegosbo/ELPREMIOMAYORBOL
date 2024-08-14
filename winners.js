@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const winnersList = document.getElementById('winnersList');
     const figureOptionsForm = document.getElementById('figureOptionsForm');
-    const totalBoards = 2300;
+    let totalBoards = 2300;
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
      // Nuevo elemento de entrada para el número máximo de cartones
