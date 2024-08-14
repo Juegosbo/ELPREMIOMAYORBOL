@@ -33,12 +33,17 @@ body {
     cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
 }
 
-/* Asegura que el label esté debajo del input */
+/* Estilo para el label */
 #labelHoyJuega {
     display: block;          /* El label estará en su propia línea */
+    position: relative;      /* Permite mover el label con top y left */
+    top: 0px;                /* Ajusta para mover hacia abajo (valores positivos) o arriba (valores negativos) */
+    left: 0px;               /* Ajusta para mover hacia la izquierda (valores negativos) o derecha (valores positivos) */
     margin-top: 5px;         /* Espacio entre el input y el label */
     font-weight: bold;       /* (Opcional) Hace que el texto sea más destacado */
+    text-align: left;        /* Alinea el texto a la izquierda */
 }
+
 
 
 
