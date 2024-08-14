@@ -1,25 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const winnersList = document.getElementById('winnersList');
     const figureOptionsForm = document.getElementById('figureOptionsForm');
-    let totalBoards = 2300;
+    const totalBoards = 2300;
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
-     // Nuevo elemento de entrada para el número máximo de cartones
-    const hoyjuegaInput = document.getElementById('hoyjuega');
-    const setMaxNumberButton = document.getElementById('setMaxNumber');
-
-    // Funcionalidad para ajustar el número máximo de cartones
-    setMaxNumberButton.addEventListener('click', () => {
-        const newMaxNumber = parseInt(hoyjuegaInput.value);
-        if (!isNaN(newMaxNumber) && newMaxNumber > 0) {
-            totalBoards = newMaxNumber;
-            alert(`Ahora se juega hasta el cartón número ${totalBoards}`);
-        } else {
-            alert('Por favor, ingrese un número válido.');
-        }
-    });
-
-    
     // Verificar si los elementos son seleccionados correctamente
     if (!winnersList) {
         console.error('No se encontró el elemento con id winnersList');
@@ -291,10 +275,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return Array.from(checkboxes).map(checkbox => checkbox.value);
     }
 
-   function checkForWinners() {
+    function checkForWinners() {
         winnersList.innerHTML = '';
         const selectedFigures = getSelectedFigures();
-        for (let i = 1; i <= totalBoards; i++) {  // Aquí se usa totalBoards
+        for (let i = 1; i <= totalBoards; i++) {
             const boardNumbers = generateBoardNumbers(i);
             for (const figureName of selectedFigures) {
                 if (isWinningBoard(boardNumbers, figures[figureName])) {
@@ -303,8 +287,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-    
-     function generateBoardNumbers(boardNumber) {
+
+    function generateBoardNumbers(boardNumber) {
         const boardNumbers = [];
         for (let col = 0; col < 5; col++) {
             const start = col * 15 + 1;
@@ -315,14 +299,14 @@ document.addEventListener('DOMContentLoaded', () => {
         return boardNumbers;
     }
 
-     function isWinningBoard(boardNumbers, figurePattern) {
+    function isWinningBoard(boardNumbers, figurePattern) {
         return figurePattern.every((marked, index) => !marked || generatedNumbers.includes(boardNumbers[index]));
     }
 
-   function addWinnerToList(boardNumber, figureName) {
+    function addWinnerToList(boardNumber, figureName) {
         const playerName = playerNames[boardNumber] || 'Sin nombre';
         const listItem = document.createElement('li');
-        listItem.textContent = `Cartón Nº ${boardNumber} (${playerName}) - Figura: ${figureName}`;
+        listItem.textContent = Cartón Nº ${boardNumber} (${playerName}) - Figura: ${figureName};
         winnersList.appendChild(listItem);
     }
 
@@ -337,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return numbers;
     }
 
-   function seedRandom(seed) {
+    function seedRandom(seed) {
         var x = Math.sin(seed) * 10000;
         return x - Math.floor(x);
     }
@@ -365,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-     function saveState() {
+    function saveState() {
         localStorage.setItem('generatedNumbers', JSON.stringify(generatedNumbers));
     }
 
@@ -375,7 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleMarkNumber(number);
         });
     });
-    
+
     updateMasterBoard();
     checkForWinners();
 });
