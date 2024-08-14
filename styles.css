@@ -17,8 +17,8 @@ body {
 /* Estilo para el label */
 #labelHoyJuega {
     position: relative;
-    top: -50px;              /* Mueve el label hacia arriba */
-    left: -300px;            /* Mueve el label hacia la izquierda */
+    top: -30px;              /* Mueve el label hacia arriba */
+    left: -150px;            /* Mueve el label hacia la izquierda */
     white-space: nowrap;     /* Asegura que el texto esté en una sola línea */
     font-weight: bold;       /* Hace que el texto sea más destacado */
     font-size: 14px;         /* Ajusta el tamaño de la fuente */
