@@ -14,38 +14,30 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-/* Estilo para el input y el botón, para que estén en la misma línea */
-#hoyjuega,
-#setMaxNumber {
-    display: inline-block;   /* Hace que el input y el botón estén en línea */
-    vertical-align: middle;  /* Alinea verticalmente el botón con el input */
+/* Estilo para el label */
+#labelHoyJuega {
+    position: relative;
+    top: -50px;              /* Mueve el label hacia arriba */
+    left: -300px;            /* Mueve el label hacia la izquierda */
+    white-space: nowrap;     /* Asegura que el texto esté en una sola línea */
+    font-weight: bold;       /* Hace que el texto sea más destacado */
+    font-size: 14px;         /* Ajusta el tamaño de la fuente */
 }
 
+/* Estilo para el input */
 #hoyjuega {
     padding: 5px;            /* Espacio interno del input */
     font-size: 14px;         /* Tamaño de la fuente */
-    margin-right: 10px;      /* Espacio a la derecha del input para separar del botón */
+    width: 100px;            /* Ajusta el ancho del input para hacerlo más pequeño */
+    margin-right: 0px;       /* Elimina el margen derecho para que el botón esté pegado al input */
 }
 
+/* Estilo para el botón */
 #setMaxNumber {
     padding: 5px 10px;       /* Espacio interno del botón */
     font-size: 14px;         /* Tamaño de la fuente */
+    margin-left: 5px;        /* Espacio mínimo entre el botón y el input */
     cursor: pointer;         /* Cambia el cursor al pasar sobre el botón */
-}
-
-/* Estilo para el label */
-#labelHoyJuega {
-    display: block;           /* Asegura que el label esté en su propia línea */
-    position: relative;       /* Permite mover el label con top y left si es necesario */
-    top: 70px;                 /* Ajusta para mover hacia abajo (valores positivos) o arriba (valores negativos) */
-    left: -20px;                /* Ajusta para mover hacia la izquierda (valores negativos) o derecha (valores positivos) */
-    margin-top: 5px;          /* Espacio entre el input y el label */
-    font-weight: normal;      /* Asegura que la fuente no sea negrita si no lo deseas */
-    text-align: left;         /* Alinea el texto a la izquierda */
-    font-family: Arial, sans-serif;  /* Asegura una fuente estándar y legible */
-    font-size: 14px;          /* Tamaño de fuente estándar */
-    line-height: 1.5;         /* Asegura que las letras tengan un espaciado consistente */
-    
 }
 
 
