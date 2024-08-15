@@ -14,52 +14,6 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-/* Estilo para el input */
-#hoyjuega {
-    padding: 10px 15px;          /* Espacio interno amplio */
-    font-size: 16px;             /* Tamaño de la fuente más grande */
-    border-radius: 5px;          /* Bordes redondeados */
-    border: 2px solid #3498db;   /* Borde de color azul */
-    outline: none;               /* Elimina el borde por defecto al hacer clic */
-    width: 340px;                /* Ancho del input */
-    margin-right: 10px;          /* Espacio entre el input y el botón */
-    transition: all 0.3s ease;   /* Transición suave en el foco */
-}
-
-#hoyjuega::placeholder {
-    color: #aaa;                 /* Color del texto del placeholder */
-    font-style: italic;          /* Texto en cursiva */
-}
-
-/* Cambia el color de borde y sombra al enfocar */
-#hoyjuega:focus {
-    border-color: #2980b9;       /* Color de borde más oscuro al enfocar */
-    box-shadow: 0 0 10px #2980b9;/* Sombra al enfocar */
-}
-
-/* Estilo para el botón */
-#setMaxNumber {
-    padding: 10px 20px;          /* Espacio interno del botón */
-    font-size: 16px;             /* Tamaño de la fuente */
-    border-radius: 5px;          /* Bordes redondeados */
-    border: none;                /* Sin borde */
-    background-color: #cf000d;   /* Color de fondo azul */
-    color: white;                /* Color del texto en blanco */
-    cursor: pointer;             /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Transición suave al pasar sobre el botón */
-}
-
-/* Cambia el color de fondo al pasar el mouse */
-#setMaxNumber:hover {
-    background-color: #2980b9;   /* Color de fondo más oscuro al pasar el mouse */
-}
-
-/* Efecto de presión al hacer clic */
-#setMaxNumber:active {
-    background-color: #1c598a;   /* Color de fondo aún más oscuro al hacer clic */
-}
-
-
 #figureOptionsContainer {
     background-image: url('fondo3.png'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
