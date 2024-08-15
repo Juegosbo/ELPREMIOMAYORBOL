@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function addWinnerToList(boardNumber, figureName) {
         const playerName = playerNames[boardNumber] || 'Sin nombre';
         const listItem = document.createElement('li');
-        listItem.textContent = Cartón Nº ${boardNumber} (${playerName}) - Figura: ${figureName};
+        listItem.textContent = `Cartón Nº ${boardNumber} (${playerName}) - Figura: ${figureName}`;
         winnersList.appendChild(listItem);
     }
 
