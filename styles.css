@@ -13,6 +13,24 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+#totalBoardsContainer {
+    position: fixed;
+    top: 460px; /* Ajusta según sea necesario para la posición */
+    left: 10px;
+    background-color: #fff;
+    border: 2px solid #2AB366;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Asegura que esté por encima de otros elementos */
+}
+
+#totalBoardsInput {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
 #figureOptionsContainer {
     background-image: url('fondo3.png'); /* Reemplaza con la ruta de tu imagen */
