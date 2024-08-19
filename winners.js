@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const totalBoardsInput = document.getElementById('totalBoardsInput');
     const winnersList = document.getElementById('winnersList');
     const figureOptionsForm = document.getElementById('figureOptionsForm');
-    const totalBoards = 1700;
+    let totalBoards = parseInt(totalBoardsInput.value, 10);
     let generatedNumbers = JSON.parse(localStorage.getItem('generatedNumbers')) || [];
 
+    // Actualiza totalBoards cuando el input cambie
+    totalBoardsInput.addEventListener('input', () => {
+        totalBoards = parseInt(totalBoardsInput.value, 10);
+        checkForWinners(); // Vuelve a verificar los ganadores con el nuevo número de cartones
+    });
+                
     // Verificar si los elementos son seleccionados correctamente
     if (!winnersList) {
         console.error('No se encontró el elemento con id winnersList');
