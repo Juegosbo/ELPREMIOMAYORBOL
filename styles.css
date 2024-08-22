@@ -18,7 +18,7 @@ body {
     top: 860px; /* Ajusta según sea necesario para la posición */
     left: 10px;
     background: linear-gradient(135deg, #93ff75, #ffffff); /* Fondo degradado de amarillo a ámbar */
-    border: 3px solid #ff6d17; /* Color del borde llamativo */
+    border: 3px solid #fff; /* Color del borde llamativo */
     border-radius: 8px;
     padding: 15px; /* Aumenta el relleno para darle más espacio interno */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
