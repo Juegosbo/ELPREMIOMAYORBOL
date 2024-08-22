@@ -15,14 +15,24 @@ body {
 }
 #totalBoardsContainer {
     position: fixed;
-    top: 340px; /* Ajusta según sea necesario para la posición */
+    top: 860px; /* Ajusta según sea necesario para la posición */
     left: 10px;
-    background-color: #fff;
-    border: 2px solid #2AB366;
+    background-color: #fff; /* Color de fondo blanco para resaltar */
+    border: 3px solid #FF5722; /* Cambia el color del borde a un color más llamativo */
     border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 15px; /* Aumenta el relleno para darle más espacio interno */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aumenta el difuminado de la sombra para darle más énfasis */
     z-index: 1001; /* Asegura que esté por encima de otros elementos */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor para que resalte más */
+    transition: all 0.3s ease; /* Agrega una transición suave para efectos interactivos */
+}
+
+/* Opcional: agrega un efecto de hover para interactividad */
+#totalBoardsContainer:hover {
+    background-color: #FFEBEE; /* Cambia el color de fondo al pasar el ratón */
+    border-color: #FF5722; /* Mantiene el color del borde */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Aumenta la sombra al pasar el ratón */
+    transform: scale(1.1); /* Aumenta un poco el tamaño del contenedor al pasar el ratón */
 }
 
 #totalBoardsInput {
