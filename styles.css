@@ -17,23 +17,26 @@ body {
     position: fixed;
     top: 860px; /* Ajusta según sea necesario para la posición */
     left: 10px;
-    background-color: #fff; /* Color de fondo blanco para resaltar */
-    border: 3px solid #FF5722; /* Cambia el color del borde a un color más llamativo */
+    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Fondo degradado de amarillo a ámbar */
+    border: 3px solid #FF5722; /* Color del borde llamativo */
     border-radius: 8px;
     padding: 15px; /* Aumenta el relleno para darle más espacio interno */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aumenta el difuminado de la sombra para darle más énfasis */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
     z-index: 1001; /* Asegura que esté por encima de otros elementos */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor para que resalte más */
-    transition: all 0.3s ease; /* Agrega una transición suave para efectos interactivos */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor */
+    transition: all 0.3s ease; /* Transición suave para efectos interactivos */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: #212121; /* Color del texto para contraste */
 }
 
 /* Opcional: agrega un efecto de hover para interactividad */
 #totalBoardsContainer:hover {
-    background-color: #FFEBEE; /* Cambia el color de fondo al pasar el ratón */
+    background: linear-gradient(135deg, #FFF59D, #FFEB3B); /* Cambia el degradado al pasar el ratón */
     border-color: #FF5722; /* Mantiene el color del borde */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Aumenta la sombra al pasar el ratón */
-    transform: scale(1.1); /* Aumenta un poco el tamaño del contenedor al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del contenedor al pasar el ratón */
 }
+
 
 #totalBoardsInput {
     width: 80px;
