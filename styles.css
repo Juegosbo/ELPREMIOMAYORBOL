@@ -86,7 +86,7 @@ label[for="selectFigure"] {
     font-family: Arial, sans-serif;
     font-weight: bold; /* Aplica negrita */
     font-size: 24px; /* Ajusta el tamaño de la fuente si es necesario */
-    color: #000; /* Color negro para el texto */
+    color: white; /* Color negro para el texto */
     text-align: center; /* Alineación del texto al centro */
     margin-bottom: 15px; /* Margen inferior */
 }
