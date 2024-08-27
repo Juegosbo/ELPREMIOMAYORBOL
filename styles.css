@@ -367,9 +367,9 @@ body {
     color: #2AB366; /* Color del texto */
     text-transform: uppercase; /* Texto en mayúsculas */
 }
-
+/*fondomedio.jfif*/
 .container {
-    background: url('fondomedio.jfif') no-repeat center center; /* Añade la imagen de fondo */
+    background: url('fondomedio2.png') no-repeat center center; /* Añade la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     padding: 20px;
     border-radius: 15px;
