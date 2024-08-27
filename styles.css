@@ -369,7 +369,7 @@ body {
 }
 /*fondomedio.jfif*/
 .container {
-    background: url('fondomedio2.png') no-repeat center center; /* Añade la imagen de fondo */
+    background: url('fondomedio2.PNG') no-repeat center center; /* Añade la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     padding: 20px;
     border-radius: 15px;
