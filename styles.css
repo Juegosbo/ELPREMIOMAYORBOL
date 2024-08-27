@@ -8,7 +8,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    background-image: url('fondoatras.jpg'); /* Ruta de la imagen de fondo   "fondo3.png" */
+    background-image: url('fondoatras3.PNG'); /* Ruta de la imagen de fondo   "fondo3.png" */
     background-size: cover; /* Asegura que la imagen cubra toda la página */
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
