@@ -13,6 +13,12 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
+label[for="selectFigure"] {
+    color: white;
+}
+
+
 #totalBoardsContainer {
     position: fixed;
     top: 860px; /* Ajusta según sea necesario para la posición */
