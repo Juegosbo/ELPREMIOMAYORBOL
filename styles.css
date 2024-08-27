@@ -959,6 +959,7 @@ table, th, td {
 th, td {
     padding: 8px;
     text-align: left;
+    color: white; /* Hace que el texto en <td> sea blanco */
 }
 
 th {
