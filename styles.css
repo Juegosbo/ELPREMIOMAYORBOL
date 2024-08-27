@@ -30,7 +30,7 @@ body {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor */
     transition: all 0.3s ease; /* Transición suave para efectos interactivos */
     font-weight: bold; /* Hace el texto en negrita */
-    color: #212121; /* Color del texto para contraste */
+    color: white; /* Color del texto para contraste */
 }
 
 /* Opcional: agrega un efecto de hover para interactividad */
@@ -356,7 +356,7 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    width: 70%; /* Ajusta este valor según tus necesidades */
+    width: 53%; /* Ajusta este valor según tus necesidades */
 }
 
 .bouncing-title {
