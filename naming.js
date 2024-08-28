@@ -2009,7 +2009,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Continúa con el resto de los combos...
     };
 
-    // Cargar nombres de combos desde localStorage
+     // Cargar nombres de combos desde localStorage
     let comboNames = JSON.parse(localStorage.getItem('comboNames')) || {};
 
     // Crear filas para cada combo
