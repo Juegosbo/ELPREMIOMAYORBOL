@@ -19,18 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const printButton = document.getElementById('printButton');
 
     const combos = {
-"Combo 1-CHICO TERREMOTO":[6093,1080,4665,4874],
-"Combo2":[2488,6286,2505,7603],
-"Combo3":[6877,1212,425,4905],
-"Combo4":[6327,2111,330,5487],
-"Combo5":[2889,6716,7455,2176],
-"Combo6":[5249,3759,7716,7486],
-"Combo7":[2324,7113,2454,3713],
-"Combo8":[4702,7471,25,7718],
-"Combo9":[3329,6198,5287,4953],
-"Combo10":[7711,7184,633,2525],
-"Combo11":[3161,1312,3742,4019],
-"Combo12":[2136,3736,4806,2057],
+"Combo 1➜CHICO TERREMOTO":[6093,1080,4665,4874],
+"Combo 2➜":[2488,6286,2505,7603],
+"Combo 3➜":[6877,1212,425,4905],
+"Combo 4➜":[6327,2111,330,5487],
+"Combo 5➜":[2889,6716,7455,2176],
+"Combo 6➜":[5249,3759,7716,7486],
+"Combo 7➜":[2324,7113,2454,3713],
+"Combo 8➜":[4702,7471,25,7718],
+"Combo 9➜":[3329,6198,5287,4953],
+"Combo 10➜":[7711,7184,633,2525],
+"Combo 11➜":[3161,1312,3742,4019],
+"Combo 12➜":[2136,3736,4806,2057],
 "Combo13":[3096,481,1396,7959],
 "Combo14":[5315,5398,3748,5763],
 "Combo15":[4718,2179,5061,259],
@@ -2389,7 +2389,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             const combo = findComboForCarton(i);
                             if (combo) {
                                 const comboMessage = document.createElement('div');
-                                comboMessage.textContent = `➜➜ ${combo}`;
+                                comboMessage.textContent = `${combo}`;
                                 comboMessage.classList.add('comboMessage');
                                 board.appendChild(comboMessage);
                             }
