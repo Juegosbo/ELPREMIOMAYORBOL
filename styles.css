@@ -25,7 +25,9 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
 }
+
 
 
 label[for="selectFigure"] {
