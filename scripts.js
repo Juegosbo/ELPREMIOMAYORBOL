@@ -18,6 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const figurePreview = document.getElementById('figurePreview');
     const printButton = document.getElementById('printButton');
 
+    const combos = {
+        "Combo 1": [6093, 1080, 4665, 4874],
+        "Combo 2": [2488, 6286, 2505, 7603],
+        "Combo 3": [6877, 1212, 425, 4905],
+        "Combo 4": [6327, 2111, 330, 5487],
+        "Combo 5": [2889, 6716, 7455, 2176],
+        // Continúa con el resto de los combos...
+    };
+
+     function findComboForCarton(cartonNumber) {
+        for (let combo in combos) {
+            if (combos[combo].includes(parseInt(cartonNumber))) {
+                return combo;
+            }
+        }
+        return null;
+    }
+
     closeVideoButton.addEventListener('click', () => {
         winnerVideoContainer.style.display = 'none';
         winnerVideo.pause();
@@ -373,6 +391,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             board.scrollIntoView({ behavior: 'smooth' });
                             board.classList.add('highlighted-permanent');
 
+                            const combo = findComboForCarton(i);
+                            if (combo) {
+                                const comboMessage = document.createElement('div');
+                                comboMessage.textContent = `Este cartón pertenece al ${combo}`;
+                                comboMessage.classList.add('comboMessage');
+                                board.appendChild(comboMessage);
+                            }
+
                             const closeButton = document.createElement('button');
                             closeButton.textContent = 'X';
                             closeButton.classList.add('closeButton');
@@ -382,6 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 document.querySelectorAll('.bingoBoard').forEach(b => {
                                     b.classList.remove('blurry');
                                 });
+                                if (board.querySelector('.comboMessage')) {
+                                    board.querySelector('.comboMessage').remove();
+                                }
                             });
 
                             board.appendChild(closeButton);
