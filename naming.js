@@ -2010,7 +2010,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
- // Cargar nombres de combos desde localStorage
+
+    // Cargar nombres de combos desde localStorage
     let comboNames = JSON.parse(localStorage.getItem('comboNames')) || {};
 
     // Crear filas para cada combo
@@ -2025,6 +2026,11 @@ document.addEventListener('DOMContentLoaded', () => {
             nameInput.type = 'text';
             nameInput.value = comboNames[combo] || '';
             nameInput.dataset.comboName = combo;
+            nameInput.addEventListener('input', () => {
+                comboNames[combo] = nameInput.value;
+                localStorage.setItem('comboNames', JSON.stringify(comboNames));
+                updatePlayerNames(); // Actualizar los nombres de los cartones
+            });
             cellName.appendChild(nameInput);
             row.appendChild(cellCombo);
             row.appendChild(cellName);
@@ -2032,25 +2038,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Actualizar los nombres de los cartones basados en los nombres de combos
+    function updatePlayerNames() {
+        let playerNames = {}; // Objeto para guardar los nombres de los cartones
+        for (let combo in combos) {
+            const name = comboNames[combo] || '';
+            combos[combo].forEach(carton => {
+                playerNames[carton] = name;
+            });
+        }
+        localStorage.setItem('playerNames', JSON.stringify(playerNames));
+    }
+
     // Procesar nombres pegados en el textarea
     processNamesBtn.addEventListener('click', () => {
         const names = namesBlock.value.split('\n').map(name => name.trim()).filter(name => name);
-
-        names.forEach((name, index) => {
-            const combo = `Combo ${index + 1}`;
-            if (combos[combo]) {
-                // Asigna el nombre al combo correspondiente
-                comboNames[combo] = name;
+        Object.keys(combos).forEach((combo, index) => {
+            if (names[index]) {
+                comboNames[combo] = names[index];
                 // Encuentra el input correspondiente y actualiza su valor
                 const input = document.querySelector(`input[data-combo-name="${combo}"]`);
                 if (input) {
-                    input.value = name;
+                    input.value = names[index];
                 }
             }
         });
 
         // Actualizar localStorage
         localStorage.setItem('comboNames', JSON.stringify(comboNames));
+        updatePlayerNames(); // Actualizar los nombres de los cartones
     });
 
     // Regresar al juego
