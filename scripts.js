@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const printButton = document.getElementById('printButton');
 
     const combos = {
-        "Combo1":[6093,1080,4665,4874],
+"Combo1":[6093,1080,4665,4874],
 "Combo2":[2488,6286,2505,7603],
 "Combo3":[6877,1212,425,4905],
 "Combo4":[6327,2111,330,5487],
@@ -1813,8 +1813,8 @@ document.addEventListener('DOMContentLoaded', () => {
 "Combo1792":[3421,504,532,3081],
 "Combo1793":[4366,7881,4322,3721],
 "Combo1794":[4249,4191,203,1126],
-""Combo1795":":[1274,5606,2290,1311],
-""Combo1796":":[6973,562,2956,2946],
+"Combo1795":[1274,5606,2290,1311],
+"Combo1796":[6973,562,2956,2946],
 "Combo1797":[7106,3607,1475,7683],
 "Combo1798":[2367,5721,7624,6874],
 "Combo1799":[4945,3739,5531,413],
