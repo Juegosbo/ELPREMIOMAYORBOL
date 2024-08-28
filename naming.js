@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const namesBlock = document.getElementById('namesBlock');
     const backToGameBtn = document.getElementById('backToGame');
 
+      // Cargar nombres de localStorage
+    let playerNames = JSON.parse(localStorage.getItem('playerNames')) || {};
+    
     // Definir combos y sus cartones
     const combos = {
       "Combo1":[6093,1080,4665,4874],
@@ -2009,8 +2012,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Continúa con el resto de los combos...
     };
 
-    // Cargar nombres de combos desde localStorage
-    let comboNames = JSON.parse(localStorage.getItem('comboNames')) || {};
 
     // Crear filas para cada combo
     function createTable() {
@@ -2034,22 +2035,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Procesar nombres pegados en el textarea
     processNamesBtn.addEventListener('click', () => {
         const names = namesBlock.value.split('\n').map(name => name.trim()).filter(name => name);
-
         names.forEach((name, index) => {
-            const combo = `Combo ${index + 1}`;
-            if (combos[combo]) {
-                // Asigna el nombre al combo correspondiente
-                comboNames[combo] = name;
-                // Encuentra el input correspondiente y actualiza su valor
-                const input = document.querySelector(`input[data-combo-name="${combo}"]`);
-                if (input) {
-                    input.value = name;
-                }
+            if (index < 2000) {
+                playerNames[index + 1] = name;
             }
         });
-
-        // Actualizar localStorage
-        localStorage.setItem('comboNames', JSON.stringify(comboNames));
+        localStorage.setItem('playerNames', JSON.stringify(playerNames));
+        createTable(); // Refrescar la tabla con los nuevos nombres
     });
 
     // Regresar al juego
