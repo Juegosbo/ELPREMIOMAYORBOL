@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const printButton = document.getElementById('printButton');
 
     const combos = {
-"Combo1":[6093,1080,4665,4874],
+"Combo1-CHICO TERREMOTO":[6093,1080,4665,4874],
 "Combo2":[2488,6286,2505,7603],
 "Combo3":[6877,1212,425,4905],
 "Combo4":[6327,2111,330,5487],
@@ -2389,7 +2389,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             const combo = findComboForCarton(i);
                             if (combo) {
                                 const comboMessage = document.createElement('div');
-                                comboMessage.textContent = `Este cartón pertenece al ${combo}`;
+                                comboMessage.textContent = `-> ${combo}`;
                                 comboMessage.classList.add('comboMessage');
                                 board.appendChild(comboMessage);
                             }
