@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Definir combos y sus cartones
     const combos = {
-       "Combo1":[6093,1080,4665,4874],
+        "Combo1":[6093,1080,4665,4874],
 "Combo2":[2488,6286,2505,7603],
 "Combo3":[6877,1212,425,4905],
 "Combo4":[6327,2111,330,5487],
@@ -2048,7 +2048,7 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('playerNames', JSON.stringify(playerNames));
     }
 
-    // Procesar nombres pegados en el textarea (opcional, si quieres una funcionalidad similar)
+    // Procesar nombres pegados en el textarea
     processNamesBtn.addEventListener('click', () => {
         const names = namesBlock.value.split('\n').map(name => name.trim()).filter(name => name);
         names.forEach((name, index) => {
