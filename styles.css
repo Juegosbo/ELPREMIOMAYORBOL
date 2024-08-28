@@ -18,12 +18,13 @@ body {
     border: 2px solid black;
     background-color: yellow;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 900; /* Aumenta el grosor del texto */
     text-align: center;
     margin-top: 10px;
-    display: inline-block; /* Esto ayudará a que el mensaje se ajuste al tamaño del contenido */
-    border-radius: 5px; /* Añade esquinas redondeadas */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra para que el mensaje resalte más */
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
 }
 
 
